@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<script type="text/javascript">
+	function validator()
+	{
+		//var x = document.forms[0].length;
+		//document.write(x);	
+		if(document.myform.Username.value == "")
+			alert("Type your username");
+		if(!document.myform.box.checked)
+			alert("Check the box.");
+	}
+</script>
+</head>
+<body>
+<form name="myform">
+	Username: <input type="text" name="Username" />
+	Password: <input type="password" name="pwd" />
+	Remember: <input type="checkbox" name="box" />
+	<input type="submit" value="Submit!" onclick="validator()" />
+</form>
+
+</body>
+</html>

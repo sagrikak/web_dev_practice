@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>X</title>
+	<script type="text/javascript">
+		function person(name, age)
+		{
+			this.name = name;
+			this.age = age;
+			this.left = yearsleft;//adding method to object
+		}
+
+		function yearsleft()
+		{
+			var yrs = 100 - this.age;
+			return yrs;
+		}
+
+		var me = new person("SK", 21);//creating new instance of an object
+		var taylor = new person("Taylor Swift", 25);
+		rectangle = {width:40, height:50};//object initializer
+	</script>
+</head>
+
+<script type="text/javascript">
+	var x = 23, y = "text";
+	document.write(Math.sqrt(x)+" "+y+"<br>");
+
+	var nums =new Array(23, 45, 5, 8);
+	var numbs =new Array(3);
+	numbs[0]=23;
+	numbs[1]=45;
+	numbs[2]=5;
+	var numbers =new Array();
+	numbers[0]=23;
+	numbers[1]=45;
+	var all = nums.concat(numbs);
+	var all = all.concat(numbers);
+	all.pop();//removes the last element from array
+	all.reverse(); 
+	all.push(1, 2);
+	all.sort();
+
+	var array1 = nums.join(" ");
+	var array2 = numbs.join(" | ");
+	var array3 = numbers.join();//default separator is comma
+	var array4 = all.join();
+
+	var me =new Array();
+	me["first"] = "Sagrika";
+	me["second"] = "Khandelwal";
+
+	document.write(me["first"]+" "+me["second"]+"<br>");
+	
+	document.write("Array1 "+array1+"<br>");
+	document.write("Array2 "+array2+"<br>");
+	document.write("Array3 "+array3+"<br>");
+	document.write("Array4 "+array4+"<br>");
+
+	function funky(z)
+	{
+		var pie = prompt("Name?", "Enter your name here.");
+		for(i=0; i<2; i++)
+			alert("Hello "+z+" "+pie);
+	} 
+	document.write(taylor.name+" "+taylor.left()+"<br>");
+	document.write("Rectangle height "+rectangle.height+"<br>");
+</script>
+
+<body>
+
+<form>
+	<input type="button" value="touch me" onmouseover="funky('mister')"/>
+	<input type="button" value="touch" onclick="alert('Alright');alert('Two times');"/>
+</form>
+<br>
+<a href="http://www.google.in" onmouseover="alert('google');">Search</a>
+	
+</body>
